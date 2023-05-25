@@ -19,6 +19,7 @@ services:
       - static_volume:/backend_static
     depends_on:
       - db
+      
   frontend:
     image: olkio/taski_frontend  # Качаем с DockerHub
     env_file: .env
